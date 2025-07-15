@@ -59,8 +59,8 @@ Wiązania Pythona 2 dla graphviza.
 
 %prep
 %setup -q -n graphviz-%{version}
-%patch14 -p1
-%patch17 -p1
+%patch -P14 -p1
+%patch -P17 -p1
 
 %{__sed} -i -e '1s,/usr/bin/python$,%{__python},' tclpkg/gv/demo/modgraph.py
 
